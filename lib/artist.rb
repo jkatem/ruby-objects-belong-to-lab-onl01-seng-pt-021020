@@ -5,5 +5,3 @@ class Artist
     @name = name
   end
 end
-
-x = Artist.new
