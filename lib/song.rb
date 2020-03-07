@@ -1,8 +1,14 @@
-class Song
+cclass Artist
+  attr_accessor :name, :genre
 
-  attr_accessor :title
-
-  def initialize(title)
-    @title = title
+  def initialize(name, genre)
+    @name = name
+    @genre = genre
   end
-end  
+
+end
+
+drake = Artist.new("Drake", "rap")
+hotline_bling = Song.new("Hotline Bling")
+
+hotline_bling.artist = drake
